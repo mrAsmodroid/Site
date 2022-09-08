@@ -1,0 +1,35 @@
+{
+  "URL" : [ 
+  {
+    "name" : "DINAMO",
+    "urls" : [
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"}
+    ]
+  },
+  {
+    "name" : "URL",
+    "urls" : [
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"}
+    ]
+  },
+  {
+    "name" : "URL_CASTA",
+    "urls" : [
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"}
+    ]
+  },
+  {
+    "name" : "URL_ZUMA",
+    "urls" : [
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"},
+        {"m_url" : "https://www.google.com/"}
+    ]
+  }]
+}

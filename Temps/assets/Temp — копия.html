@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+    <title>DeepLink</title>
+
+    <meta name="apple-itunes-app" content="app-id=1609414816, affiliate-data=myAffiliateData, app-argument=myURL">
+</head>
+<body>
+    <p id="debugs"></p>
+
+   
+    <?PHP
+        $tag=" <movie service='craftsman-1.0'><body><stack><sequence><effect type='sliding'  duration='5.0'><image filename='http://s3.amazonaws.com/stupeflix-assets/apiusecase/Canyon_Chelly_Navajo.jpg'/><image filename='http://s3.amazonaws.com/stupeflix-assets/apiusecase/Ha_long_bay.jpg'/><image filename='http://s3.amazonaws.com/stupeflix-assets/apiusecase/Monument_Valley.jpg'/></effect><effect type='none'><video filename='http://s3.amazonaws.com/stupeflix-assets/apiusecase/footage.mov' audio='false'/></effect></sequence><text type='zone' align='center,center'>Hello World</text><audio filename='http://s3.amazonaws.com/stupeflix-assets/apiusecase/george_woods_lucky_one.mp3' skip='5.0'/></stack><text type='zone' align='center,center'> Thanks for watching!</text></body></movie>";
+            echo strip_tags($tag);
+            echo "\n";
+            echo strip_tags($tag, '<movie><body><stack><sequence><effect><image><video><text><audio>');
+    ?>
+</body>
+</html>

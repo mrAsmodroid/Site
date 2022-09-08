@@ -1,0 +1,35 @@
+{
+  "URL" : [ 
+  {
+    "name" : "DINAMO",
+    "urls" : [
+        {"m_url" : "https://memoeuro-adria.eu/gnkd1/"},
+        {"m_url" : "https://memoeuro-adria.eu/gnkd1/"},
+        {"m_url" : "https://memoeuro-adria.eu/gnkd1/"}
+    ]
+  },
+  {
+    "name" : "URL",
+    "urls" : [
+        {"m_url" : "https://banners.blitz.be/C.ashx?btag=a_243b_487c_&affid=156&siteid=243&adid=487&c="},
+        {"m_url" : "https://banners.blitz.be/C.ashx?btag=a_243b_489c_&affid=156&siteid=243&adid=489&c="},
+        {"m_url" : "https://banners.blitz.be/C.ashx?btag=a_243b_488c_&affid=156&siteid=243&adid=488&c="}
+    ]
+  },
+  {
+    "name" : "URL_CASTA",
+    "urls" : [
+        {"m_url" : "https://www.casadepapel.games/"},
+        {"m_url" : "https://www.casadepapel.games/"},
+        {"m_url" : "https://www.casadepapel.games/"}
+    ]
+  },
+  {
+    "name" : "URL_ZUMA",
+    "urls" : [
+        {"m_url" : "https://www.oxenaar.world/blitzball"},
+        {"m_url" : "https://www.oxenaar.world/blitzball"},
+        {"m_url" : "https://www.oxenaar.world/blitzball"}
+    ]
+  }]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+    <title>DeepLink</title>
+
+    <meta name="apple-itunes-app" content="app-id=1609414816, affiliate-data=myAffiliateData, app-argument=myURL">
+</head>
+<body>
+    <p id="debugs"></p>
+
+    <script type="text/javascript">
+        var check = true;
+        var url = "tagil://url?dick";
+        var sec = 0;
+
+        document.getElementById("debugs").innerHTML = "Start";
+        
+        location = url;
+
+        function what_is_device() {
+            var device = -1;
+
+            var agt = navigator.userAgent.toLowerCase();
+            var is_android = /android/i.test(agt);
+            var is_ios = /iphone|ipad|ipod|Mac/i.test(agt);
+            var is_windos = /window/i.test(agt);
+            var is_safari = window.safari !== undefined;
+
+            if (is_android) {
+                device = 111;
+            } else if (is_safari || is_ios) {
+                device = 222;
+            } else if (is_windos) {
+                device = 333;
+            }
+
+            return device;
+        }
+
+        var check_device = what_is_device();
+        
+        Start();
+
+        function Start() {
+
+            setTimeout(function () {
+                Timer();
+            },
+                100);
+        }
+
+        function Timer() {
+            if (check) {
+                sec++;
+                document.getElementById("debugs").innerHTML = sec;
+                Start();
+            }
+        }
+        
+        //close();
+        //document.getElementById("debugs").innerHTML = check_device;
+
+        window.addEventListener('focus', function () {
+            //document.getElementById("debugs").innerHTML = "focus";
+            console.log("Focus")
+        }, false);
+
+        setTimeout(function () {
+            if (check) {
+                //location="https://apps.apple.com/ru/app/%D0%B2%D0%B8%D1%81%D0%B5%D0%BB%D0%B8%D1%86%D0%B0-ru/id1609414816";
+                //document.getElementById("debugs").innerHTML = "redirect";
+                //check = false;
+                //if (confirm('No APP go to Market')) {console.log("error");}
+            }
+        },
+            1000);
+
+        window.addEventListener('blur', function () {
+            //check = false;
+            console.log("No Focus")
+            //close();
+        });
+    </script>
+</body>
+</html>
