@@ -1,0 +1,104 @@
+/* Основной стиль страницы */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стиль шапки */
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Стиль окна приветствия */
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgba(66, 55, 55, 0.689);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cta-button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ff3300;
+}
+
+/* Стиль раздела услуг */
+.services {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Стиль подвала */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
